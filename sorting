@@ -1,0 +1,13 @@
+currentlist = [40, 23,]
+new_list = []
+
+while currentlist:
+    min = currentlist[0]  
+    for x in currentlist: 
+        if x < min:
+            min = x
+    new_list.append(min)
+    currentlist.remove(min)    
+
+print(new_list)
+    
